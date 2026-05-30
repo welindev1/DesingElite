@@ -3,6 +3,7 @@
 .env.local
 .env.production
 */.env
+Bot/config.json
 
 # Dependencies
 node_modules/
