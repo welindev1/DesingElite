@@ -1,0 +1,40 @@
+{
+  "token": "TU_TOKEN_AQUI",
+  "clientId": "1303135281364471859",
+  "guildId": "1345905785796034690",
+  "paypalLink": "welinsantos9@gmail.com",
+  "apiUrl": "https://welinstore-production.up.railway.app",
+  "botSecret": "TU_BOT_SECRET_AQUI",
+  "adminRoleId": "1484278701821792276",
+  "ticketTypes": [
+    {
+      "label": "Soporte General",
+      "value": "soporte",
+      "description": "Para problemas generales.",
+      "emoji": "⚙️"
+    },
+    {
+      "label": "Realizar Compra",
+      "value": "compra",
+      "description": "Para realizar una compra.",
+      "emoji": "🛒"
+    },
+    {
+      "label": "Hacer Pedido",
+      "value": "pedido",
+      "description": "Para hacer un pedido.",
+      "emoji": "📦"
+    },
+    {
+      "label": "Reportar Bugs",
+      "value": "bug",
+      "description": "Para reportar un bug.",
+      "emoji": "🔴"
+    }
+  ],
+  "ticketRoleId": "1345914407548485683",
+  "ticketCategory": "1357735631828029614",
+  "specificChannelId": "1345912580652404806",
+  "logChannelId": "1357739936664518666",
+  "ticketPanelChannelId": "1345912580652404806"
+}
