@@ -38,7 +38,7 @@ const newFooter = `      {/* ═══ FOOTER ═══ */}
           {/* Right: Discord + YouTube only */}
           <div className="flex items-center gap-3">
             <a
-              href="https://discord.gg/Ea5eSa37PT"
+              href="https://discord.gg/RhJU3va"
               target="_blank"
               rel="noreferrer"
               className="w-10 h-10 rounded-xl bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] flex items-center justify-center text-[#888] transition-all duration-300 hover:bg-[rgba(0,234,0,0.1)] hover:border-[rgba(0,234,0,0.4)] hover:text-[#00ea00] hover:shadow-[0_0_12px_rgba(0,234,0,0.2)] no-underline"

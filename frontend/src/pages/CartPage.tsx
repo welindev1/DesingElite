@@ -265,7 +265,7 @@ export default function CartPage() {
             <ul className="flex list-none gap-[6px] items-center m-0 py-2 px-3 bg-[rgba(10,12,10,0.75)] border border-[rgba(255,255,255,0.08)] rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.04)] backdrop-blur-xl">
               <li><Link to="/" className="font-['Inter'] font-semibold text-[0.82rem] uppercase tracking-[1.5px] no-underline transition-all duration-200 text-[rgba(255,255,255,0.65)] hover:text-white px-5 py-2.5 rounded-full hover:bg-[rgba(255,255,255,0.07)] block">{t.nav_home}</Link></li>
               <li><Link to="/shop" className="font-['Inter'] font-semibold text-[0.82rem] uppercase tracking-[1.5px] no-underline transition-all duration-200 text-[rgba(255,255,255,0.65)] hover:text-white px-5 py-2.5 rounded-full hover:bg-[rgba(255,255,255,0.07)] block">{t.nav_products}</Link></li>
-              <li><a href={import.meta.env.VITE_DISCORD_LINK || "https://discord.gg/Ea5eSa37PT"} target="_blank" rel="noreferrer" className="font-['Inter'] font-semibold text-[0.82rem] uppercase tracking-[1.5px] no-underline transition-all duration-200 text-[rgba(255,255,255,0.65)] hover:text-white px-5 py-2.5 rounded-full hover:bg-[rgba(255,255,255,0.07)] block">{t.nav_contact}</a></li>
+              <li><a href={import.meta.env.VITE_DISCORD_LINK || "https://discord.gg/RhJU3va"} target="_blank" rel="noreferrer" className="font-['Inter'] font-semibold text-[0.82rem] uppercase tracking-[1.5px] no-underline transition-all duration-200 text-[rgba(255,255,255,0.65)] hover:text-white px-5 py-2.5 rounded-full hover:bg-[rgba(255,255,255,0.07)] block">{t.nav_contact}</a></li>
               <li className="ml-1"><a href={`${API}/auth/discord`} className="font-['Inter'] font-bold text-[0.8rem] uppercase tracking-[1px] no-underline transition-all duration-200 text-[#00ea00] border border-[rgba(0,234,0,0.3)] px-5 py-2.5 rounded-full hover:bg-[#00ea00] hover:text-[#0b0c10] hover:shadow-[0_0_16px_rgba(0,234,0,0.35)] hover:border-[#00ea00] block">{t.nav_discord}</a></li>
             </ul>
           </nav>
@@ -328,7 +328,7 @@ export default function CartPage() {
             <ul className="list-none flex flex-col gap-4 m-0 p-0 text-center">
               <li><Link to="/" onClick={() => setMobileNavOpen(false)} className="text-[rgba(255,255,255,0.9)] font-bold text-lg uppercase tracking-[1px] no-underline hover:text-[#00ea00]">{t.nav_home}</Link></li>
               <li><Link to="/shop" onClick={() => setMobileNavOpen(false)} className="text-[rgba(255,255,255,0.9)] font-bold text-lg uppercase tracking-[1px] no-underline hover:text-[#00ea00]">{t.nav_products}</Link></li>
-              <li><a href={import.meta.env.VITE_DISCORD_LINK || "https://discord.gg/Ea5eSa37PT"} onClick={() => setMobileNavOpen(false)} className="text-[rgba(255,255,255,0.9)] font-bold text-lg uppercase tracking-[1px] no-underline hover:text-[#00ea00]">{t.nav_contact}</a></li>
+              <li><a href={import.meta.env.VITE_DISCORD_LINK || "https://discord.gg/RhJU3va"} onClick={() => setMobileNavOpen(false)} className="text-[rgba(255,255,255,0.9)] font-bold text-lg uppercase tracking-[1px] no-underline hover:text-[#00ea00]">{t.nav_contact}</a></li>
             </ul>
           </div>
         )}
@@ -693,7 +693,7 @@ export default function CartPage() {
           {/* Right: Discord + YouTube */}
           <div className="flex items-center gap-3">
             <a
-              href={import.meta.env.VITE_DISCORD_LINK || "https://discord.gg/Ea5eSa37PT"}
+              href={import.meta.env.VITE_DISCORD_LINK || "https://discord.gg/RhJU3va"}
               target="_blank"
               rel="noreferrer"
               className="w-10 h-10 rounded-xl bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] flex items-center justify-center text-[#888] transition-all duration-300 hover:bg-[rgba(0,234,0,0.1)] hover:border-[rgba(0,234,0,0.4)] hover:text-[#00ea00] hover:shadow-[0_0_12px_rgba(0,234,0,0.2)] no-underline"

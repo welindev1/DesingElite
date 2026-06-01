@@ -44,7 +44,7 @@ const newHeader = `<header className="relative z-50 px-5 md:px-[5%] py-[30px]">
               <li><Link to="/" className="text-[rgba(255,255,255,0.85)] font-['Inter'] font-bold text-[0.85rem] uppercase tracking-[1.5px] no-underline transition-colors hover:text-[#00ea00]">Inicio</Link></li>
               <li><Link to="/shop" className="text-[rgba(255,255,255,0.85)] font-['Inter'] font-bold text-[0.85rem] uppercase tracking-[1.5px] no-underline transition-colors hover:text-[#00ea00]">Productos</Link></li>
               <li><Link to="/servicios" className="text-[rgba(255,255,255,0.85)] font-['Inter'] font-bold text-[0.85rem] uppercase tracking-[1.5px] no-underline transition-colors hover:text-[#00ea00]">Servicios</Link></li>
-              <li><a href="https://discord.gg/Ea5eSa37PT" target="_blank" rel="noreferrer" className="text-[rgba(255,255,255,0.85)] font-['Inter'] font-bold text-[0.85rem] uppercase tracking-[1.5px] no-underline transition-colors hover:text-[#00ea00]">Contacto</a></li>
+              <li><a href="https://discord.gg/RhJU3va" target="_blank" rel="noreferrer" className="text-[rgba(255,255,255,0.85)] font-['Inter'] font-bold text-[0.85rem] uppercase tracking-[1.5px] no-underline transition-colors hover:text-[#00ea00]">Contacto</a></li>
               <li className="pl-4 border-l border-[rgba(255,255,255,0.1)]"><span className="text-[1.2rem] cursor-default" title="República Dominicana">🇩🇴</span></li>
             </ul>
           </nav>
@@ -88,7 +88,7 @@ const newHeader = `<header className="relative z-50 px-5 md:px-[5%] py-[30px]">
               <li><Link to="/" onClick={() => setMobileNavOpen(false)} className="text-[rgba(255,255,255,0.9)] font-bold text-lg uppercase tracking-[1px] no-underline hover:text-[#00ea00]">Inicio</Link></li>
               <li><Link to="/shop" onClick={() => setMobileNavOpen(false)} className="text-[rgba(255,255,255,0.9)] font-bold text-lg uppercase tracking-[1px] no-underline hover:text-[#00ea00]">Productos</Link></li>
               <li><Link to="/servicios" onClick={() => setMobileNavOpen(false)} className="text-[rgba(255,255,255,0.9)] font-bold text-lg uppercase tracking-[1px] no-underline hover:text-[#00ea00]">Servicios</Link></li>
-              <li><a href="https://discord.gg/Ea5eSa37PT" onClick={() => setMobileNavOpen(false)} className="text-[rgba(255,255,255,0.9)] font-bold text-lg uppercase tracking-[1px] no-underline hover:text-[#00ea00]">Contacto</a></li>
+              <li><a href="https://discord.gg/RhJU3va" onClick={() => setMobileNavOpen(false)} className="text-[rgba(255,255,255,0.9)] font-bold text-lg uppercase tracking-[1px] no-underline hover:text-[#00ea00]">Contacto</a></li>
             </ul>
           </div>
         )}

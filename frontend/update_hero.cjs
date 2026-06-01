@@ -43,7 +43,7 @@ const newHeader = `<header className="relative z-50 px-5 md:px-[5%] py-[25px] bo
               <li><Link to="/" className="text-white font-['Inter'] text-[0.95rem] no-underline transition-colors hover:text-[#10b981]">Inicio</Link></li>
               <li><Link to="/shop" className="text-white font-['Inter'] text-[0.95rem] no-underline transition-colors hover:text-[#10b981]">Productos</Link></li>
               <li><Link to="/servicios" className="text-white font-['Inter'] text-[0.95rem] no-underline transition-colors hover:text-[#10b981]">Servicios</Link></li>
-              <li><a href="https://discord.gg/Ea5eSa37PT" target="_blank" rel="noreferrer" className="text-white font-['Inter'] text-[0.95rem] no-underline transition-colors hover:text-[#10b981]">Contacto</a></li>
+              <li><a href="https://discord.gg/RhJU3va" target="_blank" rel="noreferrer" className="text-white font-['Inter'] text-[0.95rem] no-underline transition-colors hover:text-[#10b981]">Contacto</a></li>
               <li><span className="text-[1.2rem] cursor-default" title="República Dominicana">🇩🇴</span></li>
             </ul>
           </nav>
@@ -86,7 +86,7 @@ const newHeader = `<header className="relative z-50 px-5 md:px-[5%] py-[25px] bo
               <li><Link to="/" onClick={() => setMobileNavOpen(false)} className="text-white text-base no-underline">Inicio</Link></li>
               <li><Link to="/shop" onClick={() => setMobileNavOpen(false)} className="text-white text-base no-underline">Productos</Link></li>
               <li><Link to="/servicios" onClick={() => setMobileNavOpen(false)} className="text-white text-base no-underline">Servicios</Link></li>
-              <li><a href="https://discord.gg/Ea5eSa37PT" onClick={() => setMobileNavOpen(false)} className="text-white text-base no-underline">Contacto</a></li>
+              <li><a href="https://discord.gg/RhJU3va" onClick={() => setMobileNavOpen(false)} className="text-white text-base no-underline">Contacto</a></li>
             </ul>
           </div>
         )}

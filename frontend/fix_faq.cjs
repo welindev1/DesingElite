@@ -52,7 +52,7 @@ const newFaqSection = `      {/* ═══ FAQ ═══ */}
               Resolvemos las dudas más comunes sobre nuestros productos y servicios. ¿No encuentras lo que buscas?
             </p>
             <a
-              href="https://discord.gg/Ea5eSa37PT"
+              href="https://discord.gg/RhJU3va"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2.5 bg-transparent border border-[rgba(0,234,0,0.3)] text-[#00ea00] py-3 px-6 rounded-full text-sm font-bold transition-all duration-300 hover:bg-[rgba(0,234,0,0.08)] hover:border-[#00ea00] no-underline w-fit"
