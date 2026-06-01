@@ -50,7 +50,7 @@ export default function LoginPage() {
               </svg>
             </div>
             <h1 className="text-2xl font-bold text-white tracking-tight">
-              WelinStore
+              DisenosElite
             </h1>
             <p className="text-white/40 text-sm mt-1.5">
               Panel de Administración
@@ -90,7 +90,7 @@ export default function LoginPage() {
 
         {/* Footer */}
         <p className="text-center text-white/15 text-xs mt-6">
-          © 2025 WelinStore · Scripts para MTA
+          © 2025 DisenosElite · Scripts para MTA
         </p>
       </div>
     </div>

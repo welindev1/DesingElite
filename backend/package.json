@@ -1,8 +1,8 @@
 {
-  "name": "welinstore-backend",
+  "name": "DisenosElite-backend",
   "version": "1.0.0",
-  "description": "WelinStore Backend API",
-  "author": "WelinStore",
+  "description": "DisenosElite Backend API",
+  "author": "DisenosElite",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

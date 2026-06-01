@@ -40,8 +40,8 @@ async function bootstrap() {
   app.useGlobalInterceptors(new TransformInterceptor(reflector));
 
   const config = new DocumentBuilder()
-    .setTitle('WelinStore API')
-    .setDescription('API completa para la plataforma WelinStore')
+    .setTitle('DisenosElite API')
+    .setDescription('API completa para la plataforma DisenosElite')
     .setVersion('2.0')
     .addBearerAuth({ type: 'http', scheme: 'bearer', bearerFormat: 'JWT' }, 'JWT')
     .addApiKey({ type: 'apiKey', in: 'header', name: 'X-Bot-Secret' }, 'BotSecret')
@@ -54,7 +54,7 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document, {
     swaggerOptions: { persistAuthorization: true },
-    customSiteTitle: 'WelinStore API Docs',
+    customSiteTitle: 'DisenosElite API Docs',
   });
 
   const port = process.env.PORT || 3000;

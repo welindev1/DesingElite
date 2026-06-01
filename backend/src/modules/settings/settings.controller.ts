@@ -51,7 +51,7 @@ export class SettingsController {
             title: '🧪 Test de Webhook',
             description: `Este es un mensaje de prueba para el webhook de **${type}**.`,
             color: 0x3498db,
-            footer: { text: 'WelinStore' },
+            footer: { text: 'DisenosElite' },
             timestamp: new Date().toISOString(),
           }],
         }),

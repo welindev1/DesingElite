@@ -51,8 +51,8 @@ export class AuthService {
     const isMember = await this.checkGuildMembership(accessToken);
     if (!isMember) {
       throw new ForbiddenException({
-        message: 'Debes ser miembro del servidor de Discord de WelinStore.',
-        invite_url: 'https://discord.gg/welinstore',
+        message: 'Debes ser miembro del servidor de Discord de DisenosElite.',
+        invite_url: 'https://discord.gg/DisenosElite',
       });
     }
 

@@ -57,7 +57,7 @@ import { Setting } from './modules/settings/entities/setting.entity';
           type: 'postgres',
           host: cfg.get('DB_HOST', 'localhost'),
           port: cfg.get<number>('DB_PORT', 5432),
-          database: cfg.get('DB_NAME', 'welinstore'),
+          database: cfg.get('DB_NAME', 'DisenosElite'),
           username: cfg.get('DB_USER', 'postgres'),
           password: cfg.get('DB_PASS', 'postgres'),
           entities,

@@ -75,7 +75,7 @@ export default function AdminLayout() {
           </div>
           <div className="flex flex-col leading-none">
             <span className="text-white font-bold text-sm tracking-tight">
-              WelinStore
+              DisenosElite
             </span>
             <span className="text-white/30 text-[10px] uppercase tracking-widest mt-0.5">
               Admin Panel
@@ -202,7 +202,7 @@ export default function AdminLayout() {
           </button>
           <div className="flex items-center gap-2">
             <Zap className="w-4 h-4 text-red-400" />
-            <span className="text-white font-bold text-sm">WelinStore</span>
+            <span className="text-white font-bold text-sm">DisenosElite</span>
           </div>
         </header>
 

@@ -36,7 +36,7 @@ module.exports = {
       const { summary } = stats;
 
       const embed = new EmbedBuilder()
-        .setTitle('📊 Estadísticas de WelinStore')
+        .setTitle('📊 Estadísticas de DisenosElite')
         .setColor(0xFF0000)
         .addFields(
           { name: '💰 Revenue Total', value: formatCurrency(summary.total_revenue), inline: true },
@@ -48,7 +48,7 @@ module.exports = {
           { name: '🗓️ Este Mes', value: `${summary.purchases_month.count} ventas\n${formatCurrency(summary.purchases_month.revenue)}`, inline: true },
         )
         .setTimestamp()
-        .setFooter({ text: 'WelinStore Dashboard' });
+        .setFooter({ text: 'DisenosElite Dashboard' });
 
       // Agregar compras recientes si hay
       if (stats.recent_purchases?.length) {

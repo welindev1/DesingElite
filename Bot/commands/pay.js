@@ -58,7 +58,7 @@ module.exports = {
       if (i.customId === 'cashapp') {
         const cashEmbed = new EmbedBuilder()
           .setTitle('💵 Cash App')
-          .setDescription(`Aquí está tu enlace para enviar el pago:\n\n[Ir a Cash App](https://cash.app/$WelinStore)`)
+          .setDescription(`Aquí está tu enlace para enviar el pago:\n\n[Ir a Cash App](https://cash.app/$DisenosElite)`)
           .setColor(0x00C244);
         await i.reply({ embeds: [cashEmbed], ephemeral: true });
       }

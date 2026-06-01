@@ -115,7 +115,7 @@ export class PaymentsService {
         },
       ],
       applicationContext: {
-        brandName: 'WelinStore',
+        brandName: 'DisenosElite',
         landingPage: OrderApplicationContextLandingPage.Login,
         userAction: OrderApplicationContextUserAction.PayNow,
         returnUrl: `${process.env.APP_URL}/checkout/success`,

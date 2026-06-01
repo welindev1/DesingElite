@@ -129,7 +129,7 @@ export default function AdminDashboard() {
           Dashboard
         </h1>
         <p className="text-white/30 text-sm mt-1">
-          Resumen general de WelinStore
+          Resumen general de DisenosElite
         </p>
       </div>
 

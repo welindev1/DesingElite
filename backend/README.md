@@ -1,4 +1,4 @@
-# WelinStore Backend API
+# DisenosElite Backend API
 
 NestJS + PostgreSQL + TypeORM
 
@@ -22,7 +22,7 @@ npm run start:dev
 
 Agrega en .env:
 ```
-DATABASE_URL=postgresql://user:pass@ep-xxx.neon.tech/welinstore?sslmode=require
+DATABASE_URL=postgresql://user:pass@ep-xxx.neon.tech/DisenosElite?sslmode=require
 ```
 
 ## Módulos
