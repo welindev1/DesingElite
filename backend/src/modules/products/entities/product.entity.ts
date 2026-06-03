@@ -4,8 +4,7 @@ import { ApiProperty } from '@nestjs/swagger';
 export enum ProductCategory {
   SCRIPTS = 'scripts',
   PLANS = 'plans',
-  COURSES = 'courses',
-  COMBOS = 'combos',
+  MODELS = 'models',
 }
 
 @Entity('products')

@@ -11,6 +11,7 @@ import toast from 'react-hot-toast';
 const schema = z.object({
   name: z.string().min(1, 'El nombre es requerido'),
   price: z.coerce.number().min(0, 'El precio no puede ser negativo'),
+  category: z.enum(['scripts', 'models']).default('scripts'),
   description: z.string().optional(),
   short_description: z.string().optional(),
   image: z.string().url('URL inválida').optional().or(z.literal('')),
@@ -69,7 +70,7 @@ export default function AdminProductForm() {
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(schema) as any,
-    defaultValues: { visible: true },
+    defaultValues: { visible: true, category: 'scripts' },
   });
 
   useEffect(() => {
@@ -77,6 +78,7 @@ export default function AdminProductForm() {
       reset({
         name: product.name,
         price: product.price,
+        category: (product.category === 'scripts' || product.category === 'models') ? product.category : 'scripts',
         description: product.description ?? '',
         short_description: product.short_description ?? '',
         image: product.image ?? '',
@@ -192,6 +194,13 @@ export default function AdminProductForm() {
                   placeholder="0.00"
                   className={inputClass}
                 />
+              </InputField>
+
+              <InputField label="Categoría *" error={errors.category?.message}>
+                <select {...register('category')} className={inputClass}>
+                  <option value="scripts">Scripts</option>
+                  <option value="models">Modelos</option>
+                </select>
               </InputField>
 
               <InputField

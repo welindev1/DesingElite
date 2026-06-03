@@ -98,17 +98,16 @@ interface Product {
 }
 
 const CATEGORIES = [
-  { value: 'scripts', label: 'Scripts' },
   { value: 'plans', label: 'Planes' },
-  { value: 'courses', label: 'Cursos' },
-  { value: 'combos', label: 'Combos' },
+  { value: 'scripts', label: 'Scripts' },
+  { value: 'models', label: 'Modelos' },
+  { value: 'gratis', label: 'Gratis' },
 ];
 
 const CATEGORY_LABELS: Record<string, string> = {
   scripts: 'Script',
   plans: 'Plan',
-  courses: 'Curso',
-  combos: 'Combo',
+  models: 'Modelo',
 };
 
 /* ══════════════════════════════════════════════════
@@ -217,7 +216,10 @@ export default function ShopPage() {
       const matchPrice = price >= priceRange[0] && price <= priceRange[1];
       const matchCategory =
         selectedCategories.length === 0 ||
-        selectedCategories.includes(p.category);
+        selectedCategories.some(cat => {
+          if (cat === 'gratis') return Number(p.price) === 0;
+          return p.category === cat;
+        });
       return matchSearch && matchPrice && matchCategory;
     });
   }, [products, searchQuery, priceRange, selectedCategories]);

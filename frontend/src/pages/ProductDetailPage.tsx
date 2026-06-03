@@ -208,8 +208,7 @@ export default function ProductDetailPage() {
     const labels: Record<string, string> = {
       scripts: 'Script',
       plans: 'Plan',
-      courses: 'Curso',
-      combos: 'Combo',
+      models: 'Modelo',
     };
     return labels[cat] || cat;
   };
