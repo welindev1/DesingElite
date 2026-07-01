@@ -22,14 +22,14 @@ export class MtaService {
       throw new ForbiddenException({
         error: 'License has been banned.',
         reason: licenseData.status_reason || 'Violation of terms of service',
-        contact: 'https://discord.gg/DisenosElite',
+        contact: 'https://discord.gg/NQ79pWHJmP',
       });
     }
     if (licenseData.status === LicenseStatus.SUSPENDED) {
       throw new ForbiddenException({
         error: 'License is suspended.',
         reason: licenseData.status_reason || 'Contact support for more information',
-        contact: 'https://discord.gg/DisenosElite',
+        contact: 'https://discord.gg/NQ79pWHJmP',
       });
     }
     if (licenseData.status === LicenseStatus.INACTIVE) {

@@ -29,8 +29,8 @@ for file in files:
                 skip_mode = False
             continue
             
-        if 'href="https://discord.gg/RhJU3va"' in line:
-            line = line.replace('href="https://discord.gg/RhJU3va"', 'href={import.meta.env.VITE_DISCORD_LINK || "https://discord.gg/RhJU3va"}')
+        if 'href="https://discord.gg/NQ79pWHJmP"' in line:
+            line = line.replace('href="https://discord.gg/NQ79pWHJmP"', 'href={import.meta.env.VITE_DISCORD_LINK || "https://discord.gg/NQ79pWHJmP"}')
             
         if 'href="https://youtube.com"' in line:
             line = line.replace('href="https://youtube.com"', 'href={import.meta.env.VITE_YOUTUBE_LINK || "https://youtube.com"}')

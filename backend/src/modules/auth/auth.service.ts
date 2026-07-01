@@ -52,7 +52,7 @@ export class AuthService {
     if (!isMember) {
       throw new ForbiddenException({
         message: 'Debes ser miembro del servidor de Discord de DisenosElite.',
-        invite_url: 'https://discord.gg/DisenosElite',
+        invite_url: 'https://discord.gg/NQ79pWHJmP',
       });
     }
 
