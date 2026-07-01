@@ -23,8 +23,8 @@ export class DashboardService {
     const planProductIds = activePlans.flatMap((up) => up.plan?.product_ids || []);
 
     // Obtener IDs únicos de productos
-    const individualIds = activeProductsLicense.map(p => p.product_id);
-    const allProductIds = [...new Set([...individualIds, ...planProductIds])];
+    const individualIds = activeProductsLicense.map(p => Number(p.product_id));
+    const allProductIds = [...new Set([...individualIds, ...planProductIds.map(id => Number(id))])];
 
     // Obtener información completa de los productos (con download_link para usuarios autorizados)
     const productsInfo = await this.productsService.findByIds(allProductIds, true);

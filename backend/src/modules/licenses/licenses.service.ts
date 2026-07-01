@@ -48,7 +48,7 @@ export class LicensesService {
 
   hasActiveProduct(license: License, productId: number): boolean {
     const products: LicenseProduct[] = license.products || [];
-    const product = products.find((p) => p.product_id === productId);
+    const product = products.find((p) => Number(p.product_id) === Number(productId));
     if (!product) return false;
     if (product.expires_at === null) return true;
     return new Date(product.expires_at) > new Date();
@@ -64,13 +64,13 @@ export class LicensesService {
     if (!license) throw new NotFoundException('License not found');
     const products: LicenseProduct[] = license.products || [];
     const expiresAt = days ? addDays(new Date(), days).toISOString() : null;
-    const idx = products.findIndex((p) => p.product_id === productId);
+    const idx = products.findIndex((p) => Number(p.product_id) === Number(productId));
     if (idx !== -1) {
       products[idx].expires_at = expiresAt;
       products[idx].added_by = addedBy;
     } else {
       products.push({
-        product_id: productId,
+        product_id: Number(productId),
         expires_at: expiresAt,
         added_at: new Date().toISOString(),
         added_by: addedBy,
@@ -123,7 +123,7 @@ export class LicensesService {
   async removeProduct(userId: number, productId: number): Promise<License> {
     const license = await this.findByUserId(userId);
     if (!license) throw new NotFoundException('License not found');
-    license.products = (license.products || []).filter((p) => p.product_id !== productId);
+    license.products = (license.products || []).filter((p) => Number(p.product_id) !== Number(productId));
     return this.repo.save(license);
   }
 
