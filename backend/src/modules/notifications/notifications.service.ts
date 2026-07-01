@@ -96,7 +96,7 @@ export class NotificationsService {
             { name: data.changeType === 'status' ? 'Nuevo Estado' : 'Nuevo Rol', value: `\`${data.newValue}\``, inline: true },
             ...(data.changedBy ? [{ name: 'Modificado por', value: data.changedBy, inline: true }] : []),
           ],
-          footer: { text: 'DisenosElite', icon_url: 'https://imgur.com/wXxqhIV.png' },
+          footer: { text: 'DisenosElite', icon_url: 'https://imgur.com/a/zowvNm9.png' },
           timestamp: new Date().toISOString(),
         }],
       };
@@ -128,7 +128,7 @@ export class NotificationsService {
             { name: 'Método', value: data.addedBy === 'purchase' ? '🛒 Compra' : '👨‍💼 Admin', inline: true },
             { name: 'Expiración', value: data.expiresAt ? new Date(data.expiresAt).toLocaleDateString('es-ES') : '♾️ Permanente', inline: true },
           ],
-          footer: { text: 'DisenosElite', icon_url: 'https://imgur.com/wXxqhIV.png' },
+          footer: { text: 'DisenosElite', icon_url: 'https://imgur.com/a/zowvNm9.png' },
           timestamp: new Date().toISOString(),
         }],
       };
@@ -196,7 +196,7 @@ export class NotificationsService {
             { name: 'Total Original', value: `$${data.originalTotal.toFixed(2)}`, inline: true },
             { name: 'Total Final', value: `**$${data.finalTotal.toFixed(2)}**`, inline: true },
           ],
-          footer: { text: 'DisenosElite', icon_url: 'https://imgur.com/wXxqhIV.png' },
+          footer: { text: 'DisenosElite', icon_url: 'https://imgur.com/a/zowvNm9.png' },
           timestamp: new Date().toISOString(),
         }],
       };
@@ -261,7 +261,7 @@ export class NotificationsService {
       fields,
       footer: {
         text: 'DisenosElite',
-        icon_url: 'https://imgur.com/wXxqhIV.png',
+        icon_url: 'https://imgur.com/a/zowvNm9.png',
       },
       timestamp: new Date().toISOString(),
     };
@@ -292,7 +292,7 @@ export class NotificationsService {
               { name: 'Monto', value: `$${amount.toFixed(2)} USD`, inline: true },
               { name: 'ID Transacción', value: `\`${transactionId}\``, inline: false },
             ],
-            footer: { text: 'DisenosElite', icon_url: 'https://imgur.com/wXxqhIV.png' },
+            footer: { text: 'DisenosElite', icon_url: 'https://imgur.com/a/zowvNm9.png' },
             timestamp: new Date().toISOString(),
           },
         ],
