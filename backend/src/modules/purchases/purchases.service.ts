@@ -194,15 +194,11 @@ export class PurchasesService {
     if (!product) throw new NotFoundException('Producto no encontrado');
     if (Number(product.price) > 0) throw new BadRequestException('El producto no es gratuito');
 
-    // Check if user already claimed it
-    const existing = await this.repo.findOne({ 
-      where: { 
-        user_id: userId, 
-        product_id: productId, 
-        payment_status: PaymentStatus.COMPLETED 
-      } 
-    });
-    if (existing) throw new BadRequestException('Ya posees este producto');
+    // Check if user already has this product active in their license
+    const license = await this.licensesService.findByUserId(userId);
+    if (license && this.licensesService.hasActiveProduct(license, productId)) {
+      throw new BadRequestException('Ya posees este producto');
+    }
 
     const transactionId = `FREE-${Date.now()}-${Math.random().toString(36).substring(2, 8).toUpperCase()}`;
 
