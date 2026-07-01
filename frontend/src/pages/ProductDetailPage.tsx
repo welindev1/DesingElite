@@ -21,6 +21,7 @@ import {
   X,
   ZoomIn,
   ChevronDown,
+  Sparkles,
 } from 'lucide-react';
 
 // Brand icons (Lucide doesn't have these)
@@ -492,7 +493,19 @@ export default function ProductDetailPage() {
             }`}
           >
             <span className="absolute inset-0 w-1/2 h-full bg-white/15 -skew-x-12 -left-full group-hover:left-[160%] transition-all duration-700" />
-            {addedToCart ? (
+            {Number(product.price || 0) === 0 ? (
+              addedToCart ? (
+                <>
+                  <Check size={18} />
+                  {t.prod_claimed_free}
+                </>
+              ) : (
+                <>
+                  <Sparkles size={18} />
+                  {t.prod_claim_free}
+                </>
+              )
+            ) : addedToCart ? (
               <>
                 <Check size={18} />
                 {t.prod_added_to_cart}

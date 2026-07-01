@@ -1105,6 +1105,10 @@ function ProductCard({ product }: { product: Product }) {
                 <>
                   <Check size={12} /> Agregado
                 </>
+              ) : Number(product.price) === 0 ? (
+                <>
+                  <Plus size={12} /> Obtener
+                </>
               ) : (
                 <>
                   <Plus size={12} /> Agregar

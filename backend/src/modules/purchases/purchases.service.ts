@@ -6,6 +6,7 @@ import { Product } from '../products/entities/product.entity';
 import { IsArray, IsString, IsOptional, IsNumber, ValidateNested, ArrayMinSize } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
+import { LicensesService } from '../licenses/licenses.service';
 
 class CartItemDto {
   @ApiProperty() @IsNumber() id: number;
@@ -40,6 +41,7 @@ export class PurchasesService {
   constructor(
     @InjectRepository(Purchase) private repo: Repository<Purchase>,
     @InjectRepository(Product) private productRepo: Repository<Product>,
+    private licensesService: LicensesService,
   ) {}
 
   async findAll(params?: PurchaseFilters) {
@@ -217,6 +219,11 @@ export class PurchasesService {
       ip_address: ipAddress,
     });
 
-    return this.repo.save(purchase);
+    const savedPurchase = await this.repo.save(purchase);
+
+    // Add product to user's license (permanent access)
+    await this.licensesService.addProduct(userId, productId, null, 'purchase');
+
+    return savedPurchase;
   }
 }

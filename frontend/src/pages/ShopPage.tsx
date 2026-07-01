@@ -32,6 +32,7 @@ import {
   Coins,
   Shield,
   Lock,
+  Plus,
 } from 'lucide-react';
 
 /* ══════════════════════════════════════════════════
@@ -705,7 +706,15 @@ function ProductCard({
               onClick={onAddToCart}
               className="bg-[#00ea00] text-[#0b0c10] border-none py-[7px] px-3 rounded-lg text-[0.75rem] font-bold cursor-pointer flex items-center gap-1.5 transition-all duration-300 relative overflow-hidden hover:scale-105 hover:shadow-[0_4px_16px_rgba(0,234,0,0.35)]"
             >
-              <ShoppingCart size={12} /> Agregar
+              {Number(product.price) === 0 ? (
+                <>
+                  <Plus size={12} /> Obtener
+                </>
+              ) : (
+                <>
+                  <ShoppingCart size={12} /> Agregar
+                </>
+              )}
             </button>
           </div>
         </div>
